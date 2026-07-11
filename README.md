@@ -29,7 +29,7 @@ Retrieved annual crop yield records for Tennessee from **2000–2024** using the
   - Unit: Bushels per Acre (BU/ACRE)
   - State: Tennessee
 
-#### Data Preparation
+#### Crop Data Preparation
 - Combined yearly API responses into a single crop yield dataset.
 - Removed:
   - "Other Counties"
@@ -38,7 +38,7 @@ Retrieved annual crop yield records for Tennessee from **2000–2024** using the
 - Converted yield values into numeric format.
 - Standardized county names.
 
-#### Final dataset
+#### Final output
 - Created a clean county-level annual crop yield dataset covering 2000–2024.
 - Crop yield was used as the target variable for machine learning models and later merged with weather and soil features.
 
@@ -79,7 +79,7 @@ This workflow ensured that weather observations were accurately mapped from indi
 - Downloaded the SSURGO (Soil Survey Geographic Database) for Tennessee from USDA NRCS.
 - Used multiple geodatabase layers to obtain soil physical and chemical properties.
 
-#### Data Preparation 
+#### Soil Data Preparation 
 - Loaded:
   - MUPOLYGON layer containing soil map unit polygons
   - Muaggatt table containing soil attributes
@@ -113,7 +113,7 @@ This workflow ensured that weather observations were accurately mapped from indi
 - Exported final soil features for integration with weather and crop yield datasets.
 
 
-## Data Preparation
+## Data Cleaning
 
 The data preprocessing steps included:
 
